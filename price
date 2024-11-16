@@ -1,0 +1,9 @@
+n=int(input("enter the number of elements:"))
+l=eval(input("enter the price:"))
+mini=min(l)
+ind=l.index(mini)
+max=float("-inf")
+for i in range(ind+1,n):
+    if max<l[i]:
+        max=l[i]
+print(max-mini)
